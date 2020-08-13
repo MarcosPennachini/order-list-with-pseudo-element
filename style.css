@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff7ed;
+}
+section{
+    margin: 5em 4em;
+}
+
+h1, h3{
+    font-family: 'Poppins', sans-serif;
+    color: #13a699;
+    margin: 0;
+    transition: color 300ms ease-out;
+    
+}
+h1{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+h3:hover{
+    cursor: pointer;
+    color: rgba(19,166,153, .70)
+}
+p{
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    margin-bottom: 20px;
+}
+  
+.counters{
+    counter-reset: counters;
+}
+  
+.section{
+    position: relative;
+}
+  
+.section::before{
+    counter-increment: counters;
+    content: counter(counters);
+    position: absolute;
+    transform: translateX(-2.5em);
+    height: 2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -.25em;
+    border-radius: 50%;
+    background-color: #ffd708;
+    border: 3px solid;
+    box-sizing: border-box;
+}
+  
+footer{
+    margin-top: 3em;
+    width: 100%;
+    position: relative;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    width: 2em;
+    border: 3px solid #ffd708;
+    border-radius: 2px;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+footer .p_1{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: .75em 0;
+    text-align: center;
+    background-color: rgba(170, 240, 209, .75);
+}
+  
+footer .p_2{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    font-size: .9em;
+    background-color: #aaf0d1;
+}
+  
