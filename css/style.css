@@ -1,11 +1,18 @@
+:root{
+    /*Colores*/
+    --bg-color: 255, 247, 237;
+    --primary-color: 19, 166, 153;
+    --secondary-color: 255, 215, 8;
+}
+
 ::selection{
-    background-color: #13a699;
-    color: #fff7ed;
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--bg-color));
 }
 body{
     margin: 0;
     padding: 0;
-    background-color: #fff7ed;
+    background-color: rgb(var(--bg-color));
 }
 section{
     margin: 5em 4em;
@@ -13,7 +20,7 @@ section{
 
 h1, h3{
     font-family: 'Poppins', sans-serif;
-    color: #13a699;
+    color: rgb(var(--primary-color));
     margin: 0;
     transition: color 300ms ease-out;
     
@@ -25,7 +32,7 @@ h1{
 }
 h3:hover{
     cursor: pointer;
-    color: rgba(19,166,153, .70)
+    color: rgba(var(--primary-color), .70)
 }
 p{
     font-family: 'Comic Neue', cursive;
@@ -53,8 +60,8 @@ p{
     justify-content: center;
     top: -.25em;
     border-radius: 50%;
-    background-color: #ffd708;
-    border: 3px solid;
+    border: 3px solid rgb(var(--primary-color));
+    background-color: rgb(var(--secondary-color));
     box-sizing: border-box;
 }
   
@@ -67,7 +74,7 @@ footer::before{
     content: "";
     position: absolute;
     width: 2em;
-    border: 3px solid #ffd708;
+    border: 3px solid rgb(var(--secondary-color));
     border-radius: 2px;
     top: -2em;
     left: 50%;
