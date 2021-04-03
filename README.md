@@ -27,7 +27,7 @@ A simple order list with modified order numbers with css.
 
 ## Link
 
-- Live Demo: [demo]()
+- Live Demo: [demo](https://order-list-with-pseudo-element.vercel.app/)
 
 ## Author
 
